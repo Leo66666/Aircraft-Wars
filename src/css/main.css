@@ -1,0 +1,59 @@
+.container {
+  width: 700px;
+  height: 600px;
+  margin: 40px auto;
+  background-image: linear-gradient(-180deg, #040024 0%, #07165c 97%);
+  color: white;
+}
+
+.container .container-box {
+  width: 700px;
+  height: 600px;
+  background: url(../images/bg.png) no-repeat 450px center/calc(348px/2) calc(374px / 2);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.container .container-box .btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background: #115aaa;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .container-box .preload-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 190px auto 30px;
+}
+
+.container .container-box .preload-desc {
+  width: 350px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.container .container-box .preload-level {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .container-box .preload-level span {
+  font-weight: normal;
+}
+
+.container .container-next, .container .container-end {
+  display: none;
+}
+
+.container canvas {
+  display: block;
+}

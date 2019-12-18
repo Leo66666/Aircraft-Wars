@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-box container-preload">
+            <p class="preload-title">射击游戏</p>
+            <p class="preload-desc">这是一个令人欲罢不能的射击游戏，使用 ← 和 → 操作你的飞机，使用空格（space）进行射击。一起来消灭宇宙怪兽吧！</p>
+            <p class="preload-level">当前level：<span>1</span></p>
+            <button onclick="game.bindEvent(this)" class="start-btn btn">开始游戏</button>
+        </div>
+        <div class="container-box container-next">
+            <p class="preload-title">恭喜通关!</p>
+            <p class="preload-desc">恭喜你通过本关,点击按钮进入下一关!</p>
+            <p class="preload-level">当前level：<span></span></p>
+            <button onclick="game.bindEvent(this)" class="next-btn btn">开始下一关</button>
+        </div>
+        <div class="container-box container-end">
+            <p class="preload-title">闯关失败!</p>
+            <p class="preload-level">当前level：<span>2</span></p>
+            <p class="preload-score">当前分数：<span>22</span></p>
+            <button onclick="game.bindEvent(this)" class="oneMore-btn btn">重新开始</button>
+        </div>
+        <canvas id="game"></canvas>
+    </div>
+    <!-- 配置项 -->
+    <script src="src/js/config.js"></script>
+    <!-- 工具类 -->
+    <script src="src/js/util.js"></script>
+    <!-- 基本类 -->
+    <script src="src/js/element.js"></script>
+    <!-- 飞机类 -->
+    <script src="src/js/plane.js"></script>
+    <!-- 敌机类 -->
+    <script src="src/js/enemy.js"></script>
+    <!-- 子弹类 -->
+    <script src="src/js/bullet.js"></script>
+    <!-- 键盘事件 -->
+    <script src="src/js/keyboard.js"></script>
+    <!-- 游戏入口文件 -->
+    <script src="src/js/game.js"></script>
+</body>
+</html>

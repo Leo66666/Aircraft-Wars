@@ -1,0 +1,52 @@
+.container {
+  width: 700px;
+  height: 600px;
+  margin: 40px auto;
+  background-image: linear-gradient(-180deg, #040024 0%, #07165c 97%);
+  color: white;
+  .container-box {
+    width: 700px;
+    height: 600px;
+    background: url(../images/bg.png) no-repeat 450px center/calc(348px/2) calc(374px / 2);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 40px;
+
+    .btn {
+      width: 150px;
+      height: 40px;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      background: #115aaa;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .preload-title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        margin: 190px auto 30px;
+      }
+      .preload-desc {
+        width: 350px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .preload-level {
+        font-size: 20px;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+  }
+  .container-next,.container-end{
+      display: none;
+  }
+  canvas {
+    display: block;
+  }
+}
